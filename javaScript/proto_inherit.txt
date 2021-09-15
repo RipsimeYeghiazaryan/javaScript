@@ -1,0 +1,20 @@
+//Create 2 objects: animal and cat , animal object add move property , cat object must inherit move property  
+
+class Animal {
+
+  constructor(move) {
+    this.move = move;
+  }
+
+}
+
+class Cat extends Animal {
+
+  constructor(move) {
+    super(move);
+  }
+
+}
+
+let cat = new Cat ("Move faster");
+alert(cat.move);

@@ -1,0 +1,46 @@
+//Создать объект car, добавить к нему свойство color со значением 'черный'
+
+const car = {
+	color: 'black'
+};
+
+// Изменить свойство color объекта car на 'зеленый'
+
+car.color = 'green';
+
+//В объект car добавить свойство power, которое является функцией и выводит в консоль мощность двигателя
+
+car.power = function() {return 5};
+
+//На склад принимают груши и яблоки, напишите функцию, которая возвращает результат сложения количества принятых груш и яблок
+
+function getCountOfFruits(pear, apple) {
+	return `Pear's quantity- ${pear}, Apple's quantity- ${apple}`;
+}
+
+//В терминале оплаты сохранено ваше имя, напишите функцию для определения имени в терминале(если вы ввели ваше имя, то привет + имя, если нет, то нет такого имени)
+
+function payment() {
+    let name = prompt('Please, enter your name');
+    return name === 'Ripsime' ? `Hello ${name}` : 'There is no name like that';
+}
+
+//Напишите функцию вычисления типа аргумента и вывод типа в консоль
+
+function getTypeOfArg(arg) {
+   return typeof arg;
+}
+
+// Напишите функцию, которая определяет является ли число простым или нет
+
+function isPrime(num) {
+if(num <=1 ) {
+    return false;
+}
+for(let i = 2; i <= num/2; i++)
+	if(num % i === 0) {
+        return false;
+    }
+	return true;
+}
+

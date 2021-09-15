@@ -1,0 +1,34 @@
+// 1. Выполнить сложение различных типов(string+boolean, string+number, number+boolean)
+
+let str = "Hello"
+let myBoolean = true;
+alert(str + myBoolean);
+
+let num = 21;
+alert(str + num);
+
+alert(num + myBoolean);
+
+//2. Выполнить умножение различных типов(string * boolean, string * number, number * boolean)
+
+alert('123' * true);
+alert('11' * 2);
+
+
+// 3.Выполнить деление различных типов(string/boolean, string/number, number/Boolean)
+
+alert('55'/ false);
+alert('Hello'/ true);
+alert('21' / 3);
+alert(81 / true;
+
+// 4.Выполнить явное преобразование(number, string, boolean)
+
+alert(typeof Number('21'));
+alert(typeof +'21');
+alert(typeof ('5'/ 1));
+alert(typeof String(54));
+alert(typeof (5 + '1'));
+alert(typeof (true + ''))
+alert(typeof Boolean(1));
+alert(typeof (1 < 0));
