@@ -1,0 +1,80 @@
+//1 Дан массив состоящий из названий фильмов, выполните перебор массива с выводом в консоль названия каждого фильма
+
+function logFilmNames(arr) {
+    for (let i = 0; i <arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+or 
+let filmNames = ['Dear john', 'Legend', 'The Godfather'];
+for (let filmName of filmNames) {
+	alert(filmName)
+}
+ex. 
+logFilmNames(filmNames);
+
+//2 Дан массив производителей автомобилей, преобразовать массив в строку и обратно в массив
+
+arr = arr.toString();
+arr = arr.split(',')
+
+//3. Дан массив имен ваших знакомых, добавить к каждому элементу массива слова hello
+
+let names = ["Anna", "Ani", "Aram"].map(item => item += " Hello");
+
+// 4. Преобразовать числовой массив в Boolean
+let arr = [1,2,3,0,0,3].map(item => Boolean(item));
+
+//5.Отсортировать массив [1,6,7,8,3,4,5,6] по убыванию
+
+arr.sort(function(a,b){return b-a})
+
+//6.Отфильтровать массив [1,6,7,8,3,4,5,6] по значению >3
+
+[1,6,7,8,3,4,5,6].filter(item => item > 3);
+
+//7. Написать функцию, которая принимает два параметра - массив и число и выводит индекс элемента массива равный числу
+
+function getIndex(arr, num) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === num) {
+        return i;
+        }
+	}
+}
+
+//8. Реализовать цикл, который будет выводить число а, пока оно не станет меньше 10
+
+while (a < 10) {
+    alert(a);
+    a++;
+}
+
+// 9.Реализовать цикл, который выводит в консоль простые числа
+
+function getPrimeNumbers(border) {
+for (let i = 2; i <= border; i++) {
+    let flag = 0;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+            flag = 1;
+            break;
+        }
+    }
+
+    if (i > 1 && flag == 0) {
+        alert(i);
+    }
+}
+}
+//10.Реализовать цикл, который выводит в консоль нечетные числа
+
+function getOddNumbers(border) {
+    for (let i = 0; i <= border; i++) {
+        if (i % 2) {
+            alert(i);
+        }
+    }
+}
+
